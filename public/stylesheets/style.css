@@ -7,27 +7,36 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #e9ffff;
   display: grid;
-  gap: 20px;
-}
-
-form div {
-  display: grid;
-  grid-template-columns: 30% 70%;
   gap: 10px;
 }
 
-form label {
-  font-weight: bold;
-  color: #00406e;
-  align-self: center;
+.form-group {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  gap: 10px;
 }
 
-form input {
+.form-group label {
+  font-weight: bold;
+  color: #00406e;
+}
+
+.form-group input {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #cdcdcd;
   border-radius: 8px;
-  box-sizing: border-box;
+}
+
+.form-group input.input-error {
+  border: 1px solid red;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  grid-column: 2 / span 2;
 }
 
 button {

@@ -8,26 +8,31 @@
 </head>
 <body>
 <h1>Form</h1>
-<form action="/submit" novalidate method="POST">
-    <div>
+<form id="userForm" method="POST" action="/submit">
+    <div class="form-group">
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" required>
+        <input type="text" id="fname" name="fname">
+        <span class="error-message" id="fname-error"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" required>
+        <input type="text" id="lname" name="lname">
+        <span class="error-message" id="lname-error"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="age">Birth date:</label>
-        <input type="date" id="age" name="age" required>
+        <input type="date" id="age" name="age">
+        <span class="error-message" id="age-error"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email">
+        <span class="error-message" id="email-error"></span>
     </div>
     <button type="submit">Submit</button>
 </form>
 <br>
-<button onclick="window.location.href='/submissions'">View Saved Submissions</button>
+<button onclick="window.location.href='/submissions'">View Saved Forms</button>
 </body>
+<script src="/javascripts/formValidation.js"></script>
 </html>
