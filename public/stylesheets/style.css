@@ -1,0 +1,84 @@
+form {
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid #cdcdcd;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e9ffff;
+  display: grid;
+  gap: 20px;
+}
+
+form div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+  color: #00406e;
+  align-self: center;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: #0061a5;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00406e;
+}
+
+h1 {
+  text-align: center;
+  font-family: Calibri, sans-serif;
+  color: #00406e;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0061a5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00406e;
+}

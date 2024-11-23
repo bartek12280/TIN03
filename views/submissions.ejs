@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saved Submissions</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<h1>Saved Submissions</h1>
+<table>
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% submissions.forEach(submission => { %>
+        <tr>
+            <td><%= submission.fname %></td>
+            <td><%= submission.lname %></td>
+            <td><%= submission.calculatedAge %></td>
+            <td><%= submission.email %></td>
+        </tr>
+    <% }) %>
+    </tbody>
+</table>
+<br>
+<button onclick="window.location.href='/'">Go back to the form</button>
+</body>
+</html>
